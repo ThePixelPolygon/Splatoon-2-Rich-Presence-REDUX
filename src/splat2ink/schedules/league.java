@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class league {
-    public long id;
+    public static long id;
 
     @SerializedName("rule")
     @Expose
