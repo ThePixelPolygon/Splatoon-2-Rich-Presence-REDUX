@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df663d35-2815-4a94-858e-e273256e48f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/gachi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/gachiStageA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/gachiStageB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/league.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/leagueRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/leagueStageA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/splat2ink/schedules/leagueStageB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/splat2ink/schedules/regular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splat2ink/schedules/regular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/splat2ink/schedules/gachi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splat2ink/schedules/gachi.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="135">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/league.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -87,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -113,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/regular.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="75">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,13 +137,13 @@
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/gachiStageA.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/gachiStageB.java" />
-        <option value="$PROJECT_DIR$/src/splat2ink/schedules/gachi.java" />
-        <option value="$PROJECT_DIR$/src/splat2ink/schedules/regular.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/leagueRule.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/leagueStageA.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/leagueStageB.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/league.java" />
+        <option value="$PROJECT_DIR$/src/splat2ink/schedules/regular.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java" />
+        <option value="$PROJECT_DIR$/src/splat2ink/schedules/gachi.java" />
       </list>
     </option>
   </component>
@@ -186,6 +177,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="schedules" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Splatoon-2-Rich-Presence-REDUX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="splatoon2RichPresence" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -201,7 +198,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548125608934" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548126322363" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -250,18 +247,27 @@
       <updated>1548023393467</updated>
       <workItem from="1548023401720" duration="618000" />
       <workItem from="1548110906782" duration="5796000" />
-      <workItem from="1548124652053" duration="880000" />
+      <workItem from="1548124652053" duration="1674000" />
+      <workItem from="1548168001630" duration="652000" />
     </task>
+    <task id="LOCAL-00001" summary="(probably) finished the JSON structure">
+      <created>1548125653958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548125653958</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7294000" />
+    <option name="totallyTimeSpent" value="8740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29469696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29924244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -276,10 +282,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49848485" weight="0.32847896" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50151515" side_tool="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -294,6 +300,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="(probably) finished the JSON structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="(probably) finished the JSON structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -345,31 +355,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiStageA.java">
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiStageB.java">
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/league.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -394,33 +396,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiStageA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiStageB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/regular.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="75">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/league.java">
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -4,6 +4,7 @@ import com.google.gson.annotations.*;
 
 public class gachi {
     public long id;
+
     @SerializedName("rule")
     @Expose
     public gachiRule rule;
@@ -11,4 +12,8 @@ public class gachi {
     @SerializedName("stage_a")
     @Expose
     public gachiStageA stage_a;
+
+    @SerializedName("stage_b")
+    @Expose
+    public gachiStageB stage_b;
 }
