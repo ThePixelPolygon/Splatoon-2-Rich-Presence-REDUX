@@ -10,9 +10,14 @@ public class MainForm extends JFrame {
     private JRadioButton stageARadioButton;
     private JRadioButton stageBRadioButton;
     private JPanel panel;
+    private JButton startbtn;
+    private JButton results;
+    private JButton searchingButton;
+    private JButton idleInLobbyButton;
+    private JButton refreshStagesAndModesButton;
 
     Main main = new Main();
-
+    rootObject root;
     private void setStages(String stagea, String stageb) {
 
         this.stageARadioButton.setText(stagea);
@@ -26,6 +31,23 @@ public class MainForm extends JFrame {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         initialize();
+        refreshStagesAndModesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int confirm_refresh = JOptionPane.showConfirmDialog(rootPane, "Stages and modes only need to be refreshed\nonce every 2 hours.\n\nAre you sure you want to refresh?", "Confirm refresh", JOptionPane.YES_NO_OPTION);
+
+                if (confirm_refresh == 0)
+                {
+                    try
+                    {
+                        root = main.getData(true);
+                    }
+                    catch (Exception ex){}
+
+                    JOptionPane.showMessageDialog(panel,"Successfully updated database.");
+                }
+            }
+        });
     }
 
     public void initialize()
@@ -34,7 +56,7 @@ public class MainForm extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                rootObject root;
+
                 try
                 {
                     root = main.getData(false);
