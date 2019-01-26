@@ -8,10 +8,10 @@ import java.util.*;
 import java.io.*;
 import java.net.*;
 import splat2ink.schedules.*;
+import club.minnced.discord.rpc.*;
 
 public class Main {
-
-
+    DiscordRPC rpc = DiscordRPC.INSTANCE;
     public static void main (String[] args) throws java.lang.ClassNotFoundException, java.lang.InstantiationException, java.lang.IllegalAccessException, java.io.IOException
     {
         try
@@ -25,6 +25,7 @@ public class Main {
         mf.setVisible(true);
 
         rootObject root = getData(true);
+
     }
 
     private static String rd = "";
