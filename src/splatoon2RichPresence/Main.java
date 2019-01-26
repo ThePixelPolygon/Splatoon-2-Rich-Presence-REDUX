@@ -11,7 +11,13 @@ import splat2ink.schedules.*;
 import club.minnced.discord.rpc.*;
 
 public class Main {
-    DiscordRPC rpc = DiscordRPC.INSTANCE;
+    public static DiscordRPC rpc = DiscordRPC.INSTANCE;
+    //public static DiscordEventHandlers handlers = new DiscordEventHandlers();
+    public static void initDiscord(){
+        DiscordEventHandlers handlers = new DiscordEventHandlers();
+        handlers.ready = (user) -> System.out.println("Discord Ready!");
+        rpc.Discord_Initialize("459809227339202570", handlers,true,null);
+    }
     public static void main (String[] args) throws java.lang.ClassNotFoundException, java.lang.InstantiationException, java.lang.IllegalAccessException, java.io.IOException
     {
         try
@@ -25,7 +31,7 @@ public class Main {
         mf.setVisible(true);
 
         rootObject root = getData(true);
-
+        initDiscord();
     }
 
     private static String rd = "";
@@ -67,5 +73,39 @@ public class Main {
         //Converts the JSON data and maps it to the class.
         rootObject root = gson.fromJson(rd,rootObject.class);
         return root;
+    }
+
+
+    public void discordClose() {
+        rpc.Discord_Shutdown();
+    }
+
+    public void updatePresence(String state) {
+        DiscordRichPresence presence = new DiscordRichPresence();
+        presence.largeImageKey = "cover";
+        presence.state = state;
+        rpc.Discord_UpdatePresence(presence);
+    }
+    public void updatePresence(String state, String details, long startTime, long endTime, String stage ,String mode)
+    {
+        DiscordRichPresence presence = new DiscordRichPresence();
+        presence.details = details;
+        presence.state = state;
+        presence.startTimestamp = startTime;
+        presence.endTimestamp = endTime;
+
+        String largeImageKey = stage.replaceAll("\\s","_");
+        largeImageKey = largeImageKey.toLowerCase();
+
+        presence.largeImageKey = largeImageKey;
+        presence.largeImageText = stage;
+
+        String smallImageKey = mode.substring(0,mode.indexOf(" Battle"));
+        smallImageKey = smallImageKey.toLowerCase();
+
+        presence.smallImageKey = smallImageKey;
+        presence.smallImageText = mode;
+
+        rpc.Discord_UpdatePresence(presence);
     }
 }
