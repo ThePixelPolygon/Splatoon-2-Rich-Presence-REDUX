@@ -154,7 +154,7 @@ public class MainForm extends JFrame {
                 else if (currentMode == "Ranked Battle")
                 {
                     stagea = root.gachi.get(0).stage_a.name;
-                    stageb = root.regular.get(0).stage_b.name;
+                    stageb = root.gachi.get(0).stage_b.name;
                 }
                 else if (currentMode == "League Battle")
                 {
