@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Splatoon 2 Rich Presence:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="df663d35-2815-4a94-858e-e273256e48f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/MainForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/MainForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" afterDir="false" />
-    </list>
+    <list default="true" id="df663d35-2815-4a94-858e-e273256e48f3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/javadiscordrpc/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="1650">
               <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
               <folding>
                 <element signature="e#4176#4177#0" expanded="true" />
@@ -167,11 +167,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="24" />
-    <option name="width" value="1296" />
-    <option name="height" value="699" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -187,17 +186,6 @@
             <path>
               <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
               <item name="Splatoon-2-Rich-Presence-REDUX" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Splatoon-2-Rich-Presence-REDUX" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Splatoon-2-Rich-Presence-REDUX" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="jna-5.2.0.jar" type="ab9368bb:PsiFileNode" />
             </path>
             <path>
               <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
@@ -229,7 +217,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548555263931" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/java-discord-rpc-2.0.1-all.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -297,6 +285,7 @@
       <workItem from="1548526178290" duration="6107000" />
       <workItem from="1548555304989" duration="451000" />
       <workItem from="1548555925610" duration="552000" />
+      <workItem from="1548602090266" duration="132000" />
     </task>
     <task id="LOCAL-00001" summary="(probably) finished the JSON structure">
       <created>1548125653958</created>
@@ -344,13 +333,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34689000" />
+    <option name="totallyTimeSpent" value="34821000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3348485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1544196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -456,6 +444,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
+          <folding>
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4243#4244#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4471#4472#0" expanded="true" />
+            <element signature="e#4639#4640#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/leagueStageB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -467,6 +470,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -501,31 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
-          <folding>
-            <element signature="e#4176#4177#0" expanded="true" />
-            <element signature="e#4243#4244#0" expanded="true" />
-            <element signature="e#4401#4402#0" expanded="true" />
-            <element signature="e#4471#4472#0" expanded="true" />
-            <element signature="e#4639#4640#0" expanded="true" />
-            <element signature="e#4702#4703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -535,10 +523,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Splatoon 2 Rich Presence:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -586,6 +576,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

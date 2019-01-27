@@ -31,7 +31,7 @@ public class MainForm extends JFrame {
     public MainForm(){
         add(panel);
         setTitle("Splatoon 2 Rich Presence");
-        setSize(400,400);
+        setSize(450,400);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
         initialize();
@@ -70,13 +70,13 @@ public class MainForm extends JFrame {
                 if (currentMode == "Regular Battle")
                 {
                     //Add 3 minutes in epoch seconds to start time to get endTime
-                    endTime = startTime + TimeUnit.MINUTES.toSeconds(3);
+                    endTime = startTime + TimeUnit.MINUTES.toSeconds(3) + 1L;
                     rule = "Turf War";
                 }
                 else if (currentMode == "Ranked Battle" || currentMode == "League Battle")
                 {
                     //Add 5 minutes in epoch seconds to start time to get endTime
-                    endTime = startTime + TimeUnit.MINUTES.toSeconds(5);
+                    endTime = startTime + TimeUnit.MINUTES.toSeconds(5) + 1L;
                     if (currentMode == "Ranked Battle")
                     {
                         rule = root.gachi.get(0).rule.name;
