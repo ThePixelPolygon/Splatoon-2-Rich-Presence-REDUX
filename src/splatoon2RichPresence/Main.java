@@ -9,6 +9,7 @@ import java.io.*;
 import java.net.*;
 import splat2ink.schedules.*;
 import club.minnced.discord.rpc.*;
+import com.sun.jna.*;
 
 public class Main {
     public static DiscordRPC rpc = DiscordRPC.INSTANCE;

@@ -98,18 +98,17 @@ public class MainForm extends JFrame {
                 main.updatePresence("In Game",rule,startTime,endTime,stage,mode);
             }
         });
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent windowEvent) {
+                main.discordClose();
+//                super.windowClosing(windowEvent);
+            }
+        });
     }
 
     public void initialize()
     {
-        MainForm mf = new MainForm();
-        mf.addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e)
-            {
-                main.discordClose();
-            }
-        });
         modeBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
