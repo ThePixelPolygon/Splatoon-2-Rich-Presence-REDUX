@@ -43,7 +43,7 @@
       </component>
       <component id="82b75" class="javax.swing.JRadioButton" binding="stageARadioButton" default-binding="true">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="63" height="37"/>
           </grid>
         </constraints>
@@ -88,8 +88,8 @@
       </component>
       <component id="c4da7" class="javax.swing.JButton" binding="startbtn">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="115" height="87"/>
+          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="115" height="45"/>
           </grid>
         </constraints>
         <properties>
@@ -98,7 +98,7 @@
       </component>
       <component id="640d6" class="javax.swing.JRadioButton" binding="stageBRadioButton" default-binding="true">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="62" height="37"/>
           </grid>
         </constraints>
@@ -108,4 +108,10 @@
       </component>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="stage">
+      <member id="640d6"/>
+      <member id="82b75"/>
+    </group>
+  </buttonGroups>
 </form>

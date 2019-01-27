@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df663d35-2815-4a94-858e-e273256e48f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_discord_rpc_2_0_1_all.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jna-5.2.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/java_discord_rpc_2_0_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Splatoon 2 Rich Presence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Splatoon 2 Rich Presence.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/splatoon2RichPresence/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splatoon2RichPresence/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/MainForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/MainForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,11 +29,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="103" column="36" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+            <state relative-caret-position="288">
+              <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
               <folding>
-                <element signature="e#3800#3982#0" expanded="true" />
-                <element signature="e#3981#3982#0" expanded="true" />
+                <element signature="e#4176#4177#0" expanded="true" />
+                <element signature="e#4243#4244#0" expanded="true" />
+                <element signature="e#4401#4402#0" expanded="true" />
+                <element signature="e#4471#4472#0" expanded="true" />
+                <element signature="e#4639#4640#0" expanded="true" />
+                <element signature="e#4702#4703#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,21 +61,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="105">
               <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2861#2862#0" expanded="true" />
-                <element signature="e#2899#2900#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -151,9 +148,9 @@
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/gachiStageA.java" />
         <option value="$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java" />
         <option value="$PROJECT_DIR$/javadiscordrpc/pom.xml" />
-        <option value="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form" />
-        <option value="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" />
         <option value="$PROJECT_DIR$/src/splatoon2RichPresence/Main.java" />
+        <option value="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" />
+        <option value="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form" />
       </list>
     </option>
   </component>
@@ -171,10 +168,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="50" />
+    <option name="x" value="54" />
     <option name="y" value="24" />
-    <option name="width" value="1306" />
-    <option name="height" value="700" />
+    <option name="width" value="1296" />
+    <option name="height" value="699" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,6 +201,17 @@
             </path>
             <path>
               <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Splatoon-2-Rich-Presence-REDUX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Splatoon-2-Rich-Presence-REDUX" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="splatoon2RichPresence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Splatoon-2-Rich-Presence-REDUX" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -219,12 +227,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548554864584" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548555263931" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/java-discord-rpc-2.0.1-all.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -287,6 +295,8 @@
       <workItem from="1548515612864" duration="369000" />
       <workItem from="1548517465292" duration="1820000" />
       <workItem from="1548526178290" duration="6107000" />
+      <workItem from="1548555304989" duration="451000" />
+      <workItem from="1548555925610" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="(probably) finished the JSON structure">
       <created>1548125653958</created>
@@ -323,17 +333,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548515927771</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rich Presence finally works! :D">
+      <created>1548554884374</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548554884374</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33197000" />
+    <option name="totallyTimeSpent" value="34689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3242424" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3348485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -342,8 +359,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32792208" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.28246754" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32792208" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28246754" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -374,7 +391,8 @@
     <MESSAGE value="Started work on frontend" />
     <MESSAGE value="Added some non-functional buttons and one functional(?) one" />
     <MESSAGE value="Finally imported the Discord RPC lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally imported the Discord RPC lib" />
+    <MESSAGE value="Rich Presence finally works! :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rich Presence finally works! :D" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/regular.java" />
@@ -392,20 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/leagueStageB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -438,6 +442,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/java-discord-rpc-2.0.2.jar!/club/minnced/discord/rpc/DiscordEventHandlers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/rootObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/leagueStageB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiStageA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -452,23 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/src/lib/java-discord-rpc-2.0.2.jar!/club/minnced/discord/rpc/DiscordEventHandlers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/regular.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -479,35 +501,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/splat2ink/schedules/gachiRule.java">
+    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="103" column="36" selection-start-line="103" selection-start-column="36" selection-end-line="103" selection-end-column="36" />
+        <state relative-caret-position="288">
+          <caret line="122" column="48" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
           <folding>
-            <element signature="e#3800#3982#0" expanded="true" />
-            <element signature="e#3981#3982#0" expanded="true" />
+            <element signature="e#4176#4177#0" expanded="true" />
+            <element signature="e#4243#4244#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4471#4472#0" expanded="true" />
+            <element signature="e#4639#4640#0" expanded="true" />
+            <element signature="e#4702#4703#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2861#2862#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">

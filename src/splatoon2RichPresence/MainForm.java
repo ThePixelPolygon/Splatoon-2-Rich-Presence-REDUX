@@ -105,6 +105,24 @@ public class MainForm extends JFrame {
 //                super.windowClosing(windowEvent);
             }
         });
+        searchingButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                main.updatePresence("Searching...");
+            }
+        });
+        results.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                main.updatePresence("Viewing Results");
+            }
+        });
+        idleInLobbyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                main.updatePresence("In Lobby");
+            }
+        });
     }
 
     public void initialize()
