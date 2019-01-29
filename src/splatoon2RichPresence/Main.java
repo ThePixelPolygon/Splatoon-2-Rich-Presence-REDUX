@@ -56,7 +56,7 @@ public class Main {
             try
             {
                 data = con.getInputStream();
-            } catch (java.net.UnknownHostException e)
+            } catch (Exception e)
             {
                 JOptionPane.showMessageDialog(null,"Failed to update stage and mode data.\nPlease check your internet connection","Refresh Failed",JOptionPane.ERROR_MESSAGE);
                 return null;
@@ -80,6 +80,7 @@ public class Main {
     public void discordClose() {
         rpc.Discord_Shutdown();
     }
+
 
     public void updatePresence(String state) {
         DiscordRichPresence presence = new DiscordRichPresence();
