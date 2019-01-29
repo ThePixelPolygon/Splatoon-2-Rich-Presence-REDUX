@@ -34,66 +34,6 @@ public class MainForm extends JFrame {
         setSize(450,400);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
-        initialize();
-        refreshStagesAndModesButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int confirm_refresh = JOptionPane.showConfirmDialog(rootPane, "Stages and modes only need to be refreshed\nonce every 2 hours.\n\nAre you sure you want to refresh?", "Confirm refresh", JOptionPane.YES_NO_OPTION);
-
-                if (confirm_refresh == 0)
-                {
-                    try
-                    {
-                        //Reloads the stages
-                        root = main.getData(true);
-                        if (root != null)
-                        {
-                            JOptionPane.showMessageDialog(panel,"Successfully updated database.");
-                        }
-                    }
-                    catch (Exception ex){
-
-                    }
-
-
-                }
-            }
-        });
-        startbtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                updatePresence();
-            }
-        });
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent windowEvent) {
-                main.discordClose();
-//                super.windowClosing(windowEvent);
-            }
-        });
-        searchingButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                main.updatePresence("Searching...");
-            }
-        });
-        results.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                main.updatePresence("Viewing Results");
-            }
-        });
-        idleInLobbyButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                main.updatePresence("In Lobby");
-            }
-        });
-    }
-
-    public void initialize()
-    {
         modeBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
@@ -135,6 +75,81 @@ public class MainForm extends JFrame {
                 setStages(stagea,stageb);
             }
         });
+        refreshStagesAndModesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int confirm_refresh = JOptionPane.showConfirmDialog(rootPane, "Stages and modes only need to be refreshed\nonce every 2 hours.\n\nAre you sure you want to refresh?", "Confirm refresh", JOptionPane.YES_NO_OPTION);
+
+                if (confirm_refresh == 0)
+                {
+                    try
+                    {
+                        //Reloads the stages
+                        root = main.getData(true);
+                        if (root != null)
+                        {
+                            JOptionPane.showMessageDialog(panel,"Successfully updated database.");
+                        }
+                    }
+                    catch (Exception ex){
+
+                    }
+
+
+                }
+            }
+        });
+
+        //Match Start event
+        ActionListener matchStart = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                updatePresence();
+            }
+        };
+        //Adds listener to F1 key
+        getRootPane().registerKeyboardAction(matchStart,KeyStroke.getKeyStroke("F1"),JComponent.WHEN_IN_FOCUSED_WINDOW);
+        //Adds listener to start button
+        startbtn.addActionListener(matchStart);
+
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent windowEvent) {
+                main.discordClose();
+//                super.windowClosing(windowEvent);
+            }
+        });
+        searchingButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                main.updatePresence("Searching...");
+            }
+        });
+        results.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                main.updatePresence("Viewing Results");
+            }
+        });
+        //Assigns Viewing Results to F2 on keyboard
+        getRootPane().registerKeyboardAction(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                main.updatePresence("Viewing Results");
+            }
+        },KeyStroke.getKeyStroke("F2"),JComponent.WHEN_IN_FOCUSED_WINDOW);
+        idleInLobbyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                main.updatePresence("In Lobby");
+            }
+        });
+    }
+
+    public void initialize()
+    {
+
     }
 
     public void updatePresence() {

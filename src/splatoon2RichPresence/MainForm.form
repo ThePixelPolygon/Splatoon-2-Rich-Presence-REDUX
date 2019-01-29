@@ -59,7 +59,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Viewing Results"/>
+          <text value="Viewing Results (F2)"/>
         </properties>
       </component>
       <component id="d8ec3" class="javax.swing.JButton" binding="searchingButton" default-binding="true">
@@ -93,7 +93,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="MATCH START"/>
+          <text value="MATCH START (F1)"/>
         </properties>
       </component>
       <component id="640d6" class="javax.swing.JRadioButton" binding="stageBRadioButton" default-binding="true">

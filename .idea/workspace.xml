@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df663d35-2815-4a94-858e-e273256e48f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Splatoon 2 Rich Presence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Splatoon 2 Rich Presence.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/MainForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Splatoon 2 Rich Presence/splatoon2RichPresence/MainForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/splatoon2RichPresence/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splatoon2RichPresence/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="833">
               <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,14 +46,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2034">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+            <state relative-caret-position="442">
+              <caret line="110" column="120" lean-forward="true" selection-start-line="110" selection-start-column="120" selection-end-line="110" selection-end-column="120" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2175#2176#0" expanded="true" />
-                <element signature="e#2658#2659#0" expanded="true" />
-                <element signature="e#2886#2887#0" expanded="true" />
-                <element signature="e#3117#3118#0" expanded="true" />
+                <element signature="e#4025#4026#0" expanded="true" />
+                <element signature="e#4073#4074#0" expanded="true" />
+                <element signature="e#2246#2467#0" expanded="true" />
+                <element signature="e#2466#2467#0" expanded="true" />
+                <element signature="e#4601#4602#0" expanded="true" />
+                <element signature="e#4668#4669#0" expanded="true" />
+                <element signature="e#4826#4827#0" expanded="true" />
+                <element signature="e#4896#4897#0" expanded="true" />
+                <element signature="e#5064#5065#0" expanded="true" />
+                <element signature="e#5127#5128#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,7 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +234,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,7 +315,8 @@
       <workItem from="1548555304989" duration="451000" />
       <workItem from="1548555925610" duration="552000" />
       <workItem from="1548602090266" duration="132000" />
-      <workItem from="1548775429963" duration="2022000" />
+      <workItem from="1548775429963" duration="2712000" />
+      <workItem from="1548784343591" duration="1327000" />
     </task>
     <task id="LOCAL-00001" summary="(probably) finished the JSON structure">
       <created>1548125653958</created>
@@ -355,17 +360,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548554884374</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Imported JTouchBar, commented more code">
+      <created>1548777554890</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548777554890</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36870000" />
+    <option name="totallyTimeSpent" value="38887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1705757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -407,7 +419,8 @@
     <MESSAGE value="Added some non-functional buttons and one functional(?) one" />
     <MESSAGE value="Finally imported the Discord RPC lib" />
     <MESSAGE value="Rich Presence finally works! :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rich Presence finally works! :D" />
+    <MESSAGE value="Imported JTouchBar, commented more code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Imported JTouchBar, commented more code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/regular.java" />
@@ -458,6 +471,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -519,26 +542,22 @@
     <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/splatoon2RichPresence/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2034">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        <state relative-caret-position="442">
+          <caret line="110" column="120" lean-forward="true" selection-start-line="110" selection-start-column="120" selection-end-line="110" selection-end-column="120" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2658#2659#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#3117#3118#0" expanded="true" />
+            <element signature="e#4025#4026#0" expanded="true" />
+            <element signature="e#4073#4074#0" expanded="true" />
+            <element signature="e#2246#2467#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <element signature="e#4668#4669#0" expanded="true" />
+            <element signature="e#4826#4827#0" expanded="true" />
+            <element signature="e#4896#4897#0" expanded="true" />
+            <element signature="e#5064#5065#0" expanded="true" />
+            <element signature="e#5127#5128#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -602,7 +621,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -610,7 +628,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>java-discord-rpc-2.0.1-all</last-edited>
+          <last-edited>com.thizzer.jtouchbar:jtouchbar:1.0.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
