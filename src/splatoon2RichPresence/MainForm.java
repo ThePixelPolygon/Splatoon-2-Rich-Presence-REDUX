@@ -7,6 +7,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.concurrent.TimeUnit;
 import com.thizzer.jtouchbar.*;
+import splat2ink.coop_schedules.coopRootObject;
 import splat2ink.schedules.*;
 
 public class MainForm extends JFrame {
@@ -22,6 +23,7 @@ public class MainForm extends JFrame {
 
     Main main = new Main();
     rootObject root;
+    coopRootObject coopRoot;
     private void setStages(String stagea, String stageb) {
         //Sets stages in radio buttons
         this.stageARadioButton.setText(stagea);
@@ -33,15 +35,19 @@ public class MainForm extends JFrame {
         setTitle("Splatoon 2 Rich Presence");
         setSize(450,400);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
+        boolean salmonRunOpen = getSalmonRunOpen();
+        if (salmonRunOpen) {
+            modeBox.addItem("Salmon Run");
+        }
         modeBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                //Gets data from splat2ink.schedules package without updating it again.
+                //Gets data from splat2ink package without updating it again.
                 try
                 {
                     root = main.getData(false);
+                    coopRoot = main.getCoopData(false);
 
                 } catch (Exception ex)
                 {
@@ -50,7 +56,7 @@ public class MainForm extends JFrame {
                 }
                 //Gets current mode selected in combo box
                 String currentMode = modeBox.getSelectedItem().toString();
-
+                stageBRadioButton.setEnabled(true);
                 String stagea = "Stage A";
                 String stageb = "Stage B";
 
@@ -70,7 +76,12 @@ public class MainForm extends JFrame {
                     stagea = root.league.get(0).stage_a.name;
                     stageb = root.league.get(0).stage_b.name;
                 }
-
+                else if (currentMode == "Salmon Run")
+                {
+                    stagea = coopRoot.details.get(0).stage.name;
+                    stageb = "";
+                    stageBRadioButton.setEnabled(false);
+                }
                 //Actually does the changing of stage names in the radio buttons
                 setStages(stagea,stageb);
             }
@@ -86,7 +97,8 @@ public class MainForm extends JFrame {
                     {
                         //Reloads the stages
                         root = main.getData(true);
-                        if (root != null)
+                        coopRoot = main.getCoopData(true);
+                        if (root != null && coopRoot != null)
                         {
                             JOptionPane.showMessageDialog(panel,"Successfully updated database.");
                         }
@@ -94,8 +106,23 @@ public class MainForm extends JFrame {
                     catch (Exception ex){
 
                     }
+                }
+                boolean salmonRunOpen = getSalmonRunOpen();
 
+                if (!salmonRunOpen)
+                {
+                    try {
+                        modeBox.removeItem("Salmon Run");
+                    }
+                    catch (Exception ex)
+                    {
 
+                    }
+                }
+                else {
+                    if (!salmonRunVisible()) {
+                        modeBox.addItem("Salmon Run");
+                    }
                 }
             }
         });
@@ -149,7 +176,10 @@ public class MainForm extends JFrame {
 
     public void initialize()
     {
-
+        boolean salmonRunOpen = getSalmonRunOpen();
+        if (salmonRunOpen) {
+            modeBox.addItem("Salmon Run");
+        }
     }
 
     public void updatePresence() {
@@ -211,5 +241,31 @@ public class MainForm extends JFrame {
 
         //Updates the presence with the options set.
         main.updatePresence("In Game",rule,startTime,endTime,stage,mode);
+    }
+    public boolean getSalmonRunOpen() {
+        try {
+            coopRoot = main.getCoopData(false);
+        } catch (java.io.IOException e){
+
+        }
+
+        long currentStart = coopRoot.schedules.get(0).start_time;
+        long currentEnd = coopRoot.schedules.get(0).end_time;
+
+        long currentTime = System.currentTimeMillis()/1000L;
+
+        if (currentTime < currentEnd && currentTime >= currentStart)
+        {
+            return true;
+        }
+        else { return false; }
+    }
+    public boolean salmonRunVisible() {
+        try {
+            modeBox.getItemAt(4);
+            return true;
+        } catch (java.lang.IndexOutOfBoundsException e) {
+            return false;
+        }
     }
 }

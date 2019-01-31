@@ -1,12 +1,12 @@
 package splat2ink.schedules;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class rootObject {
     //Regular battle list
-    public List<regular> regular;
+    public ArrayList<regular> regular;
     //Ranked battle list
-    public List<gachi> gachi;
+    public ArrayList<gachi> gachi;
     //League battle list
-    public List<league> league;
+    public ArrayList<league> league;
 }

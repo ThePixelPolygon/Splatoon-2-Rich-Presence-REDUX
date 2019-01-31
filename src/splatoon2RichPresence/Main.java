@@ -10,6 +10,7 @@ import java.net.*;
 import splat2ink.schedules.*;
 import club.minnced.discord.rpc.*;
 import com.sun.jna.*;
+import splat2ink.coop_schedules.*;
 
 public class Main {
     public static DiscordRPC rpc = DiscordRPC.INSTANCE;
@@ -27,11 +28,11 @@ public class Main {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
 
         }
-        MainForm mf = new MainForm();
-
-        mf.setVisible(true);
-
         rootObject root = getData(true);
+        coopRootObject cRoot = getCoopData(true);
+        MainForm mf = new MainForm();
+        System.out.println(cRoot.schedules.get(0).start_time);
+        mf.setVisible(true);
         initDiscord();
     }
 
@@ -73,6 +74,35 @@ public class Main {
 
         //Converts the JSON data and maps it to the class.
         rootObject root = gson.fromJson(rd,rootObject.class);
+        return root;
+    }
+
+    public static String rd2 = "";
+    public static coopRootObject getCoopData(boolean reload) throws java.io.IOException {
+
+        if (reload)
+        {
+            //Salmon Run Schedules
+            URL url = new URL("https://splatoon2.ink/data/coop-schedules.json");
+            HttpsURLConnection con = (HttpsURLConnection)url.openConnection();
+            con.setRequestMethod("GET");
+            con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36");
+            InputStream data = null;
+            try
+            {
+                data = con.getInputStream();
+            } catch (Exception e)
+            {
+                return null;
+            }
+
+            //Declare and initialize reader
+            BufferedReader reader = new BufferedReader(new InputStreamReader(data));
+            rd2 = reader.readLine();
+            data.close();
+        }
+        Gson gson = new Gson();
+        coopRootObject root = gson.fromJson(rd2,coopRootObject.class);
         return root;
     }
 

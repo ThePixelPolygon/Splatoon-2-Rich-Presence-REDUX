@@ -103,6 +103,8 @@
           </grid>
         </constraints>
         <properties>
+          <enabled value="true"/>
+          <selected value="false"/>
           <text value="Stage B"/>
         </properties>
       </component>
