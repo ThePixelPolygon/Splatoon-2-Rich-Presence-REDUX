@@ -20,6 +20,7 @@ public class MainForm extends JFrame {
     private JButton searchingButton;
     private JButton idleInLobbyButton;
     private JButton refreshStagesAndModesButton;
+    private JSpinner waveSpinner;
 
     Main main = new Main();
     rootObject root;
@@ -39,6 +40,7 @@ public class MainForm extends JFrame {
         if (salmonRunOpen) {
             modeBox.addItem("Salmon Run");
         }
+        waveSpinner.setValue(1);
         modeBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e)
@@ -246,7 +248,7 @@ public class MainForm extends JFrame {
         try {
             coopRoot = main.getCoopData(false);
         } catch (java.io.IOException e){
-
+            return false;
         }
 
         long currentStart = coopRoot.schedules.get(0).start_time;
@@ -262,10 +264,15 @@ public class MainForm extends JFrame {
     }
     public boolean salmonRunVisible() {
         try {
-            modeBox.getItemAt(4);
-            return true;
+            String mode = (String)modeBox.getItemAt(4);
+            if (mode == "Salmon Run"){ return true; }
+            else return false;
         } catch (java.lang.IndexOutOfBoundsException e) {
             return false;
         }
+    }
+    private void coopUpdatePresence() {
+        String details = "Wave " + waveSpinner.getValue();
+        String state = "Working Shift";
     }
 }

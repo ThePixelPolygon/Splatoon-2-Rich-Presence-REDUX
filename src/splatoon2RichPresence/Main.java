@@ -126,7 +126,7 @@ public class Main {
         presence.startTimestamp = startTime;
         presence.endTimestamp = endTime;
 
-        String largeImageKey = stage.replaceAll("\\s","_");
+        String largeImageKey = stage.replaceAll("\\s|\\u0027","_");
         largeImageKey = largeImageKey.toLowerCase();
 
         presence.largeImageKey = largeImageKey;
