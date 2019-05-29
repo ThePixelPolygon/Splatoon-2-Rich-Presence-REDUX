@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.util.*;
 import java.io.*;
 import java.net.*;
+
+import splat2ink.festivals.festivalsRootObject;
 import splat2ink.schedules.*;
 import club.minnced.discord.rpc.*;
 import com.sun.jna.*;
@@ -50,7 +52,7 @@ public class Main {
 
             //Imitates a browser. Required to access that sweet, sweet data.
             con.setRequestMethod("GET");
-            con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36");
+            con.setRequestProperty("User-Agent", "Splatoon2RPJavaBot/0.0.1 (+https://github.com/ThePixelPolygon; The Pixel Polygon#2069)");
 
             //Converts the data into an input stream
             InputStream data = null;
@@ -86,7 +88,7 @@ public class Main {
             URL url = new URL("https://splatoon2.ink/data/coop-schedules.json");
             HttpsURLConnection con = (HttpsURLConnection)url.openConnection();
             con.setRequestMethod("GET");
-            con.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36");
+            con.setRequestProperty("User-Agent", "Splatoon2RPJavaBot/0.0.1 (+https://github.com/ThePixelPolygon; The Pixel Polygon#2069)");
             InputStream data = null;
             try
             {
@@ -103,6 +105,34 @@ public class Main {
         }
         Gson gson = new Gson();
         coopRootObject root = gson.fromJson(rd2,coopRootObject.class);
+        return root;
+    }
+
+    public static festivalsRootObject getFestivalsData(boolean reload) throws java.io.IOException {
+
+        if (reload)
+        {
+            //Salmon Run Schedules
+            URL url = new URL("https://splatoon2.ink/data/festivals.json");
+            HttpsURLConnection con = (HttpsURLConnection)url.openConnection();
+            con.setRequestMethod("GET");
+            con.setRequestProperty("User-Agent", "Splatoon2RPJavaBot/0.0.1 (+https://github.com/ThePixelPolygon; The Pixel Polygon#2069)");
+            InputStream data = null;
+            try
+            {
+                data = con.getInputStream();
+            } catch (Exception e)
+            {
+                return null;
+            }
+
+            //Declare and initialize reader
+            BufferedReader reader = new BufferedReader(new InputStreamReader(data));
+            rd2 = reader.readLine();
+            data.close();
+        }
+        Gson gson = new Gson();
+        festivalsRootObject root = gson.fromJson(rd2,festivalsRootObject.class);
         return root;
     }
 
