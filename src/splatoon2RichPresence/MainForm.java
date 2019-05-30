@@ -19,6 +19,7 @@ public class MainForm extends JFrame {
     private JButton idleInLobbyButton;
     private JButton refreshStagesAndModesButton;
     private JSpinner waveSpinner;
+    private JButton changeRegionButton;
 
     Main main = new Main();
     rootObject root;
@@ -138,7 +139,7 @@ public class MainForm extends JFrame {
         getRootPane().registerKeyboardAction(matchStart,KeyStroke.getKeyStroke("F1"),JComponent.WHEN_IN_FOCUSED_WINDOW);
         //Adds listener to start button
         startbtn.addActionListener(matchStart);
-
+        Object[] regions = {"NA/AU/NZ", "EU", "JP"};
 
         addWindowListener(new WindowAdapter() {
             @Override
@@ -170,6 +171,12 @@ public class MainForm extends JFrame {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 main.updatePresence("In Lobby");
+            }
+        });
+        changeRegionButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                Object chosenRegion = JOptionPane.showInputDialog(null, "Please select region", "Region Select", JOptionPane.INFORMATION_MESSAGE, null, regions, regions[0]);
             }
         });
     }
