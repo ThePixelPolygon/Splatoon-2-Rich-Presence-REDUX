@@ -4,9 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.concurrent.TimeUnit;
+import java.util.prefs.Preferences;
 import com.thizzer.jtouchbar.*;
 import splat2ink.coop_schedules.coopRootObject;
 import splat2ink.schedules.*;
+import splat2ink.festivals.*;
 
 public class MainForm extends JFrame {
     private JComboBox modeBox;
@@ -20,15 +22,20 @@ public class MainForm extends JFrame {
     private JButton refreshStagesAndModesButton;
     private JSpinner waveSpinner;
     private JButton changeRegionButton;
+    private JRadioButton shiftyStationRadioButton;
 
+    Preferences usrPref = Preferences.userRoot().node("/user/splat2rp/root");
     Main main = new Main();
     rootObject root;
     coopRootObject coopRoot;
+    festivalsRootObject festivalsRoot;
     private void setStages(String stagea, String stageb) {
         //Sets stages in radio buttons
         this.stageARadioButton.setText(stagea);
         this.stageBRadioButton.setText(stageb);
     }
+
+
 
     public MainForm(){
         add(panel);
@@ -36,9 +43,32 @@ public class MainForm extends JFrame {
         setSize(450,400);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         boolean salmonRunOpen = getSalmonRunOpen();
+
+        //Checks if region has been set
+        if ((usrPref.get("REGION","not_set")) == "not_set") {
+            JOptionPane.showConfirmDialog(rootPane,"Welcome to the Splatoon 2 Rich Presence!\nBefore you begin, please set your region.","Set Region",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE);
+            setRegion();
+        }
+        if (splatfestDetected(usrPref.get("REGION", "not_set")))
+        {
+            modeBox.removeAllItems();
+            modeBox.addItem("Splatfest Battle (Regular)");
+            modeBox.addItem("Splatfest Battle (Pro)");
+            shiftyStationRadioButton.setVisible(true);
+        }
+        else if (!(splatfestDetected(usrPref.get("REGION","not_set"))) && modeBox.getItemAt(0) == "Splatfest Battle (Regular") {
+            modeBox.removeAllItems();
+            modeBox.addItem("Regular Battle");
+            modeBox.addItem("Ranked Battle");
+            modeBox.addItem("League Battle");
+            shiftyStationRadioButton.setVisible(false);
+        }
         if (salmonRunOpen) {
             modeBox.addItem("Salmon Run");
+
         }
+
+
         waveSpinner.setValue(1);
         modeBox.addActionListener(new ActionListener() {
             @Override
@@ -49,6 +79,7 @@ public class MainForm extends JFrame {
                 {
                     root = main.getData(false);
                     coopRoot = main.getCoopData(false);
+                    festivalsRoot = main.getFestivalsData(false);
 
                 } catch (Exception ex)
                 {
@@ -62,7 +93,7 @@ public class MainForm extends JFrame {
                 String stageb = "Stage B";
 
                 //Changes stages according to combo box selection
-                if (currentMode == "Regular Battle")
+                if (currentMode == "Regular Battle" || currentMode == "Splatfest Battle (Pro)" || currentMode == "Splatfest Battle (Regular)")
                 {
                     stagea = root.regular.get(0).stage_a.name;
                     stageb = root.regular.get(0).stage_b.name;
@@ -99,6 +130,7 @@ public class MainForm extends JFrame {
                         //Reloads the stages
                         root = main.getData(true);
                         coopRoot = main.getCoopData(true);
+                        festivalsRoot = main.getFestivalsData(true);
                         if (root != null && coopRoot != null)
                         {
                             JOptionPane.showMessageDialog(panel,"Successfully updated database.");
@@ -139,7 +171,7 @@ public class MainForm extends JFrame {
         getRootPane().registerKeyboardAction(matchStart,KeyStroke.getKeyStroke("F1"),JComponent.WHEN_IN_FOCUSED_WINDOW);
         //Adds listener to start button
         startbtn.addActionListener(matchStart);
-        Object[] regions = {"NA/AU/NZ", "EU", "JP"};
+
 
         addWindowListener(new WindowAdapter() {
             @Override
@@ -176,7 +208,7 @@ public class MainForm extends JFrame {
         changeRegionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Object chosenRegion = JOptionPane.showInputDialog(null, "Please select region", "Region Select", JOptionPane.INFORMATION_MESSAGE, null, regions, regions[0]);
+                setRegion();
             }
         });
     }
@@ -279,5 +311,33 @@ public class MainForm extends JFrame {
     private void coopUpdatePresence() {
         String details = "Wave " + waveSpinner.getValue();
         String state = "Working Shift";
+    }
+
+    public void setRegion() {
+        Object[] regions = {"NA/AU/NZ", "EU", "JP"};
+        Object chosenRegion = JOptionPane.showInputDialog(rootPane, "Please select region", "Region Select", JOptionPane.INFORMATION_MESSAGE, null, regions, regions[0]);
+        if (chosenRegion != null) usrPref.put("REGION",chosenRegion.toString());
+    }
+
+    public boolean splatfestDetected(String region) {
+        long startTime = 0;
+        long endTime = 0;
+        long currentTime = System.currentTimeMillis() / 1000L;
+        if (region == "NA/AU/NZ") {
+            startTime = festivalsRoot.na.get(0).times.start;
+            endTime = festivalsRoot.na.get(0).times.end;
+        }
+        else if (region == "EU") {
+            startTime = festivalsRoot.eu.get(0).times.start;
+            endTime = festivalsRoot.eu.get(0).times.end;
+        }
+        else if (region == "JP") {
+            startTime = festivalsRoot.jp.get(0).times.start;
+            endTime = festivalsRoot.jp.get(0).times.end;
+        }
+        if (currentTime >= startTime && currentTime < endTime) {
+            return true;
+        }
+        else return false;
     }
 }

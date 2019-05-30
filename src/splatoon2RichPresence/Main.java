@@ -161,9 +161,14 @@ public class Main {
 
         presence.largeImageKey = largeImageKey;
         presence.largeImageText = stage;
-
-        String smallImageKey = mode.substring(0,mode.indexOf(" Battle"));
-        smallImageKey = smallImageKey.toLowerCase();
+        String smallImageKey = "";
+        if (!(mode == "Splatfest Battle (Pro)" || mode == "Splatfest Battle (Normal)"))
+        {
+            smallImageKey = mode.substring(0,mode.indexOf(" Battle"));
+            smallImageKey = smallImageKey.toLowerCase();
+        } else {
+            smallImageKey = "regular";
+        }
 
         presence.smallImageKey = smallImageKey;
         presence.smallImageText = mode;
